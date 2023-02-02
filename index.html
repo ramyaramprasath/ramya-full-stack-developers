@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML WEBPAGE</title>
+    <link rel="stylesheet"href="styles1.css"/>
+</head>
+<body>
+    <nav id ="sidebar">
+        <h2>JAVASCRIPT</h2>
+        <ul>
+            <li>
+                <a href="#What is Javascript?" class="nav-item">what is Javascript?</a>
+            </li>
+            <li>
+                <a href="#Datatypes"class="nav-item">Datatypes</a>
+            </li>
+            <li>
+                <a href="#Array"class="nav-item">Array</a>
+            </li>
+            <li>
+                <a href="#Method"class="nav-item">Method</a>
+            </li>
+            
+                <li>
+                    <a href="#Map Method"class="nav-item">Map Method</a>
+                </li>
+                <li>
+                    <a href="#Filter Method"class="nav-item">Filter Method</a>
+                </li>
+                <li>
+                    <a href="#Flat Method"class="nav-item">Flat Method</a>
+                </li>
+                <li>
+                    <a href="#Destructuring Method "class="nav-item">Destructuring Method</a>
+                </li>
+                <li>
+                    <a href="#Spread Operator Method "class="nav-item">Spread Operator Method</a>
+                </li>
+            
+        </ul>
+    </nav>
+        <main id = "documentation">
+            <section id = "What is Javascript?">
+                <h2>What is Javascript?</h2>
+                <article>
+                    <p>
+                        JavaScript is a powerful programming language that can add 
+                        interactivity to a website. It was invented by Brendan Eich
+                        It is a core technolgoies of the world wide web, 
+                        alongside HTML and css. As of 2022, 98% of webside use JavaScript
+                        on the client side
+                    </p>
+                    <strong>Syntax&colon;</strong>
+                    <pre>
+                        &lt;script src &equals; &ldquo; scripts &sol; main &period;js &gt;&lt; &sol;script&gt;
+                    </pre>
+                </article>
+            </section>
+                <section id = "Datatypes">
+                    <h2>Datatypes&colon;</h2>
+                        <p>
+                            In programming, data types is an important concept.
+                            To be able to operate on variables, it is important to know something about the type.
+                            Without data types, a computer cannot safely solve this:
+                        </p>
+                        <ul>
+                          <li>String</li>
+                          <li>Number</li>
+                          <li>Boolean</li>
+                          <li>Array</li>
+                          <li>Object</li>
+                        </ul>
+                </section>
+                <section id = "Array">
+                    <h2>Array:</h2>
+                    <article>
+                        <p>
+                            An array is an ordered collection of data (either primitive or object depending upon the language).
+                            Arrays are used to store multiple values in a single variable. This is compared to a variable that 
+                            can store only one value.
+                        </p>
+                            <strong>Syntax&colon;</strong>
+                            <pre>
+                                const array name &equals; &lbrack;item1&comma; item2&comma; &period;&period;&period;&rbrack;&semi;
+                            </pre>
+                    </article>
+                </section>
+                <section id = "Method">
+                    <h2>Method:</h2>
+                        <ul>
+                          <li>Map&lpar;&rpar;</li>
+                          <li>Filter&lpar;&rpar;</li>
+                          <li>Flat&lpar;&rpar;</li>
+                          <li>Destructuring&lpar;&rpar;</li>
+                          <li>SpreadOperator&lpar;&rpar;</li>
+                        </ul>
+                </section>
+                <section id = "Map Method">
+                    <h2>Map Method:</h2>
+                    <article>
+                        <p>
+                            <ul>
+                                <li>It lets you avoid making changes to the main array.</li>
+                                <li>You can modify the items.</li>
+                                <li>Gives you more readable code.</li>
+                            </ul>
+                        </p>
+                            <strong>Example:</strong>
+                            <pre>
+                                let square &equals;&lbrack;1&comma;4&comma;9&comma;16&comma;25&comma;&rbrack;&semi;
+                                let result &equals;square &period;map&lpar;math&period;sqrt&rpar;&semi;
+                                console&period;log&lpar;result&rpar;
+                                &nbsp;
+                                
+                                //output: [2,3,4,5]
+                            </pre>
+                    </article>
+                </section>
+                <section id = "Filter Method">
+                    <h2>Filter Method:</h2>
+                    <article>
+                        <p>
+                            <ul>
+                                <li>This method create a new array filled with elements that pass
+                                    a test provided by a function.
+                                </li>
+                                <li>This method does not execute the function for empty elements.</li>
+                                <li>This method does not change the oringial array.</li>
+                            </ul>
+                        </p>
+                            <strong>Example:</strong>
+                            <pre>
+                                var number = [25,30,15,55,40,10];
+                                number.filter(funtion(number)
+                                {
+                                    return number>=30;
+                                });
+                                &nbsp;
+
+                                // output: [30,55,40]                      
+                            </pre>
+                    </article>
+                </section>
+                <section id="Flat Method">
+                    <h2>Flat Method:</h2>
+                    <article>
+                        <p>
+                            Flat() method to convert an original array into a new array. It does
+                            this by collecting and concatenating the sub-arrarys in an array into 
+                            a single array.
+                        </p>
+                        <strong>Example:</strong>
+                        <pre>
+                            const days = ["mon","tues",["wed","thurs",["fri","sat"]],"sun"];
+                            console.log(days.flat());
+                            &nbsp;
+                            
+                            //output: ["mon","tue","wed","thrus","fri","sat","sun"]
+                        </pre>
+                    </article>
+                </section>
+                <section id ="Destructuring Method">
+                    <h2>Destructuring Method:</h2>
+                    <article>
+                        <p>
+                            We may have an array or object that we are working with, but only need some of the
+                            items containe in Destructuring makes it easy to extract only is need.
+                        </p>
+                        <strong>Example:</strong>
+                        <pre>
+                            const food = ["dosa","briyani","noodles"];
+                            const [breakfast, lunch,dinner] = food;
+                            console.log(dinner);
+                            console.log(breakfast);
+                            
+                            //output: noodles dosa                                      
+                       </pre>
+                    </article>
+                </section>
+                <section id = "Spread Operator Method">
+                    <h2>Spread Operator Method:</h2>
+                    <article>
+                        <p>
+                            spread operator (. . . . .) allows us to quickly copy all or part of an existing array 
+                            or object into another array or object.
+                        </p>
+                        <strong>Example:</strong>
+                        <pre>
+                            var indoor = ["Chess","carrom","Dice"];
+                            console.log(...indoor);
+                            var outdoor =["Cricket","Football","Basketball"];
+                            var game = [...indoor,...outdoor];
+                            console.log(game);
+
+                            //outpuy:['Chess','Carrom','Dice']
+                            //output:['Chess','carrom','Dice','Cricket','Football','Basketball']
+                        </pre>
+                    </article>
+                </section>
+        </main>
+</body>
+</html>
